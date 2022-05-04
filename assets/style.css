@@ -1,0 +1,88 @@
+body {
+    font-family: Helvetica, Arial;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    margin: 10px auto 20px;
+    display: block;
+}
+
+#content-container {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("florian_tomatoes.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    background-color: white;
+    z-index: 1;
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container {
+    text-align: center;
+}
+
+.inner-container {
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+}
+
+.indent {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#shop-online-button-container {
+    justify-content: center;
+    display: flex;
+}
+
+#shop-online-button {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    background-color: #adf;
+}
+
+#shop-online-button:hover {
+    text-decoration: underline;
+}
+
+#socials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socials-link {
+    padding: 6px;
+    margin: 10px;
+}
+
+.socials-icon {
+    width: 40px;
+    height: 40px;
+}
