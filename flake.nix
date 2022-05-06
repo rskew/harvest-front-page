@@ -1,5 +1,5 @@
 {
-  description = "Splash page for Harvest Fruit and Veg";
+  description = "Front page for Harvest Fruit and Veg";
   inputs.nixpkgs.url = "nixpkgs";
   outputs = { self, nixpkgs, ... }:
     let
@@ -12,20 +12,10 @@
             name = "harvest-front-page";
             src = ./assets;
             installPhase = ''
-                mkdir $out
-                cp * $out/
+              mkdir $out
+              cp * $out/
             '';
             phases = [ "unpackPhase" "installPhase" ];
           };
-        nixosModule = { domain, enableACME ? true, ACMEEmail, forceSSL ? true, ... }: {
-          services.nginx.enable = true;
-          services.nginx.virtualHosts.${domain} = {
-            enableACME = enableACME;
-            forceSSL = forceSSL;
-            root = self.packages.x86_64-linux.harvest-front-page.out;
-          };
-          security.acme.email = if enableACME then ACMEEmail else null;
-          security.acme.acceptTerms = if enableACME then true else false;
-        };
       };
 }
