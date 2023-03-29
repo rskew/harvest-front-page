@@ -16,7 +16,7 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url("florian_tomatoes.jpg");
+    background-image: url("florian_tomatoes.jpg"),url("florian_tomatoes_low_res.jpg");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
