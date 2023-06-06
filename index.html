@@ -9,7 +9,7 @@
         <link rel = "stylesheet" type = "text/css" href = "style.css">
     </head>
     <body>
-        <img src="florian_tomatoes_low_res.jpg?p=1" class="background" style="backgroud-color: #bcd; z-index: -1" />
+        <img src="florian_tomatoes_low_res.jpg?p=1" class="background not-loaded" style="backgroud-color: #bcd; z-index: -1" onload="this.classList.remove('not-loaded')" />
         <img src="florian_tomatoes.jpg?p=1" class="background not-loaded" onload="this.classList.remove('not-loaded')" />
         <div id="content-container">
             <div id="content">
