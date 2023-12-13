@@ -4,7 +4,7 @@ body {
 
 .background {
     object-fit: cover;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     margin: 0;
@@ -31,14 +31,17 @@ img {
     right: 0;
     display: flex;
     justify-content: center;
+    overflow: visible;
 }
 
 #content {
     background-color: white;
     z-index: 1;
     display: inline-block;
+    position: absolute;
     padding-left: 50px;
     padding-right: 50px;
+    overflow: visible;
 }
 
 .container {
@@ -58,12 +61,12 @@ img {
     justify-content: space-between;
 }
 
-#shop-online-button-container {
+.shop-online-button-container {
     justify-content: center;
     display: flex;
 }
 
-#shop-online-button {
+.shop-online-button {
     margin: 10px;
     padding: 10px;
     width: 200px;
@@ -75,7 +78,7 @@ img {
     background-color: #adf;
 }
 
-#shop-online-button:hover {
+.shop-online-button:hover {
     text-decoration: underline;
 }
 
